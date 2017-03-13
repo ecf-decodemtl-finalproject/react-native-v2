@@ -9,11 +9,11 @@ import Router from './Router';
 class App extends Component {
   componentWillMount() {
       const config = {
-          apiKey: 'AIzaSyDZ-xWrweq5d0yQinnvSO1SWVrPOy4UBzg',
-          authDomain: 'ecf-skateboard.firebaseapp.com',
-          databaseURL: 'https://ecf-skateboard.firebaseio.com',
-          storageBucket: 'ecf-skateboard.appspot.com',
-          messagingSenderId: '741535944554'
+          apiKey: ,
+          authDomain: ,
+          databaseURL: ,
+          storageBucket: ,
+          messagingSenderId: 
       };
 
       firebase.initializeApp(config);
