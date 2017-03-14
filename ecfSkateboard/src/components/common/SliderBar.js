@@ -22,10 +22,12 @@ const SliderBar = ({
 };
 const styles = {
   containerStyles: {
+    flex: 1,
+    justifyContent: 'center',
     padding: 40
   },
   textStyle: {
     fontSize: 18
   }
-}
+};
 export { SliderBar };
