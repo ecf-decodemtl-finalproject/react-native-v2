@@ -19,7 +19,12 @@ class ControlScreen extends Component {
                     />
                 </CardSection>
                 <CardSection>
-                    <Gauge value={50} />
+                    <View>
+                        <Gauge value={30} />
+                    </View>
+                    <View>
+                        <Gauge value={50} />
+                    </View>
                 </CardSection>
                 <CardSection>
                     <SliderBar

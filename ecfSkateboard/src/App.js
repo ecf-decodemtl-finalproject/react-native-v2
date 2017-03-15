@@ -9,11 +9,11 @@ import Router from './Router';
 class App extends Component {
   componentWillMount() {
       const config = {
-          apiKey: 'AIzaSyDZ-xWrweq5d0yQinnvSO1SWVrPOy4UBzg',
-          authDomain: 'ecf-skateboard.firebaseapp.com',
-          databaseURL: 'https://ecf-skateboard.firebaseio.com',
-          storageBucket: 'ecf-skateboard.appspot.com',
-          messagingSenderId: '741535944554'
+          apiKey: 'AIzaSyBNJI5TpJil98l7tXl5B6el_pnhzgXQOTk',
+          authDomain: 'ecf-skateboard-4b2f0.firebaseapp.com',
+          databaseURL: 'https://ecf-skateboard-4b2f0.firebaseio.com',
+          storageBucket: 'ecf-skateboard-4b2f0.appspot.com',
+          messagingSenderId: '1056259849416'
       };
 
       firebase.initializeApp(config);

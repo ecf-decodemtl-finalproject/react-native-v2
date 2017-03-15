@@ -11,11 +11,8 @@ const Gauge = ({ value }) => {
               fill={value}
               tintColor="#00e0ff"
               backgroundColor="#3d5875"
-            >
-            {
-                () => <Text>{value} KM/h!!!</Text>
-            }
-            </AnimatedCircularProgress>
+              value={value}
+            />
         </View>
     );
 };
