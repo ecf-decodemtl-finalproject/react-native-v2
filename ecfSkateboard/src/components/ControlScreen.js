@@ -8,7 +8,7 @@ import logo from '../assets/logo.jpg';
 
 class ControlScreen extends Component {
     render() {
-        const { logoImageStyles } = styles;
+        const { logoImageStyles, gaugeContainer } = styles;
         const { powerlevel, lights } = this.props;
         return (
             <View>
@@ -18,12 +18,18 @@ class ControlScreen extends Component {
                         style={logoImageStyles}
                     />
                 </CardSection>
-                <CardSection>
+                <CardSection style={gaugeContainer}>
                     <View>
-                        <Gauge value={30} />
+                        <Gauge
+                            value={30}
+                            label={'Km/h'}
+                        />
                     </View>
                     <View>
-                        <Gauge value={50} />
+                        <Gauge
+                            value={50}
+                            label={'RPM'}
+                        />
                     </View>
                 </CardSection>
                 <CardSection>
@@ -65,6 +71,9 @@ const styles = {
     logoImageStyles: {
         height: 50,
         width: 110
+    },
+    gaugeContainer: {
+        justifyContent: 'space-around'
     }
 };
 export default connect(mapStateToProps, { handleSetPower, toggleLights })(ControlScreen);
